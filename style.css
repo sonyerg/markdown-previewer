@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #060606;
+  color: white;
+}
+
+.textarea {
+  border-radius: 5px;
+  font-size: 22px;
+  padding: 20px;
+  outline: none;
+  background-color: cadetblue;
+}
+
+.textarea:focus {
+  box-shadow: 10px 5px 5px rgb(197, 206, 232);
+}
+
+#preview {
+  padding: 30px;
+  width: 800px;
+  background-color: cadetblue;
+  border-radius: 10px;
+  color: black;
+}
+
+#preview pre {
+  background-color: black;
+}
+
+#preview code {
+  color: white;
+}
+
+.preview-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
