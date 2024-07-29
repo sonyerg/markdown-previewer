@@ -1,14 +1,10 @@
-// Setting options for marked
 marked.setOptions({
-  breaks: true, // Enable line breaks
+  breaks: true,
 });
 
-// Create a renderer for marked (Consider checking for deprecation)
 const renderer = new marked.Renderer();
-
-function App() {
-  // Default markdown text
-  const [text, setText] = React.useState(`# Hello
+const defaultMd = `
+# Hello
 ## Subheader
 
 [@sonyerg](https://github.com/sonyerg)
@@ -22,7 +18,10 @@ function example() {
 > This is a blockquote
 
 ![Image](https://via.placeholder.com/150)
-**Bold text**`);
+**Bold text**`;
+
+function App() {
+  const [text, setText] = React.useState(defaultMd);
 
   return (
     <div className="text-center px-4">
